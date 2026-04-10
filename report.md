@@ -12,9 +12,9 @@
 
 ---
 
-## 1. 프로젝트 개요
+## 1. 개요
 
-본 프로젝트는 간단한 Python 기반 계산기 프로그램을 구현하면서, Git의 주요 기능인 브랜치(branch), 커밋(commit), 병합(merge) 과정을 실습하는 것을 목표로 한다.
+이 프로젝트는 간단한 Python 기반 계산기 프로그램을 구현하고, Git의 주요 기능인 브랜치(branch), 커밋(commit), 병합(merge) 과정을 실습하는 것을 목표로 진행한다.
 
 ### 프로젝트 구조
 git_basic/
@@ -27,14 +27,14 @@ git_basic/
 - 디렉토리 구성: `src/`, `docs/`
 - 주요 파일: `calculator.py`, `main.py`, `README.md`
 
-### 원격 저장소
+### 깃헙 레포 저장소
 
 - GitHub Repository  
   > https://github.com/gksdPwns1/git-report-opensource
 
 ---
 
-## 2. 작업 내역
+## 2. 작업 전체 과정 및 진행내용
 
 ### 2-1. 초기 설정 및 커밋
 
@@ -175,6 +175,6 @@ v
 
 | 시나리오 | 브랜치 | 결과 |
 |----------|--------|------|
-| Fast-Forward | `feature/multiply` | 포인터만 이동, merge commit 없음 |
-| 3-Way Merge | `feature/divide` | 자동 병합, merge commit 생성 |
-| Conflict Merge | `feature/update-readme` | 충돌 발생 → 수동 해결 후 커밋 |
+| Fast-Forward | `feature/multiply` | 별도의 병합 커밋 없이 브랜치가 최신 커밋으로 단순 이동 |
+| 3-Way Merge | `feature/divide` | 서로 다른 변경 이력을 결합하며 새로운 병합 커밋 생성 |
+| Conflict Merge | `feature/update-readme` | 동일 영역 수정으로 충돌 발생, 수동으로 수정 후 병합 필요 |
